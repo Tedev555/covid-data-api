@@ -22,6 +22,9 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 
+ENV PORT 8989
+EXPOSE $PORT
+
 # Build a release artifact.
 RUN mvn package -DskipTests
 
@@ -30,9 +33,6 @@ RUN mvn package -DskipTests
 # https://hub.docker.com/r/adoptopenjdk/openjdk8
 # https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds
 FROM adoptopenjdk/openjdk11:alpine-slim
-
-ENV PORT 8989
-EXPOSE $PORT
 
 # Copy the jar to the production image from the builder stage.
 COPY --from=builder /app/target/*.jar /app.jar
