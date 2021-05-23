@@ -21,31 +21,31 @@ public class ApiController {
     public ResponseEntity<?> getCovidCases() {
         Map<String, Object> data = new HashMap<>();
         List<Province> provinceList = new ArrayList<>();
-        provinceList.add(new Province("ຜົ້ງສາລີ", 10, 0));
-        provinceList.add(new Province("ຫຼວງນໍ້າທາ", 10, 0));
-        provinceList.add(new Province("ຫົວພັນ", 10, 0));
-        provinceList.add(new Province("ບໍ່ແກ້ວ", 10, 0));
-        provinceList.add(new Province("ອຸດົມໄຊ", 10, 0));
-        provinceList.add(new Province("ໄຊຍະບູລີ", 10, 0));
-        provinceList.add(new Province("ຊຽງຂວາງ", 10, 0));
-        provinceList.add(new Province("ຫຼວງພະບາງ", 10, 0));
-        provinceList.add(new Province("ວຽງຈັນ", 10, 0));
-        provinceList.add(new Province("ນຫລ ວຽງຈັນ", 10, 0));
-        provinceList.add(new Province("ບໍລິຄຳໄຊ", 10, 0));
-        provinceList.add(new Province("ຄຳມ່ວນ", 10, 0));
-        provinceList.add(new Province("ສະຫວັນນະເຂດ", 10, 0));
-        provinceList.add(new Province("ສາລະວັນ", 10, 0));
-        provinceList.add(new Province("ເຊກອງ", 10, 0));
-        provinceList.add(new Province("ອັດຕະປື", 10, 0));
-        provinceList.add(new Province("ຈຳປາສັກ", 10, 0));
-        provinceList.add(new Province("ໄຊສົມບູນ", 10, 0));
+        provinceList.add(new Province("ຜົ້ງສາລີ", 5, 0));
+        provinceList.add(new Province("ຫຼວງນໍ້າທາ", 8, 0));
+        provinceList.add(new Province("ຫົວພັນ", 0, 0));
+        provinceList.add(new Province("ບໍ່ແກ້ວ", 475, 0));
+        provinceList.add(new Province("ອຸດົມໄຊ", 14, 0));
+        provinceList.add(new Province("ໄຊຍະບູລີ", 3, 0));
+        provinceList.add(new Province("ຊຽງຂວາງ", 1, 0));
+        provinceList.add(new Province("ຫຼວງພະບາງ", 16, 0));
+        provinceList.add(new Province("ວຽງຈັນ", 18, 0));
+        provinceList.add(new Province("ນຫລ ວຽງຈັນ", 850, 4));
+        provinceList.add(new Province("ບໍລິຄຳໄຊ", 3, 0));
+        provinceList.add(new Province("ຄຳມ່ວນ", 6, 5));
+        provinceList.add(new Province("ສະຫວັນນະເຂດ", 86, 5));
+        provinceList.add(new Province("ສາລະວັນ", 13, 0));
+        provinceList.add(new Province("ເຊກອງ", 1, 0));
+        provinceList.add(new Province("ອັດຕະປື", 0, 0));
+        provinceList.add(new Province("ຈຳປາສັກ", 301, 5));
+        provinceList.add(new Province("ໄຊສົມບູນ", 1, 0));
 
-        data.put("newCases", 14);
+        data.put("newCases", 19);
         data.put("provinces", provinceList);
-        data.put("active", 961);
+        data.put("active", 725);
         data.put("death", 2);
-        data.put("recovered", 800);
-        data.put("test", 230610);
+        data.put("recovered", 1074);
+        data.put("test", 233618);
         return ResponseEntity.ok(data);
     }
 }
