@@ -46,6 +46,9 @@ public class ApiController {
         data.put("death", 2);
         data.put("recovered", 1074);
         data.put("test", 233618);
+        data.put("appVersion", 0.1 );
+        data.put("updateURL", "https://apps.apple.com/gb/app/nhs-covid-19/id1520427663");
+        data.put("infoDate", "24/05/2021");
         return ResponseEntity.ok(data);
     }
 }
