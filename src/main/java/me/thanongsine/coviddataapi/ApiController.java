@@ -40,15 +40,23 @@ public class ApiController {
         provinceList.add(new Province("ຈຳປາສັກ", 301, 5));
         provinceList.add(new Province("ໄຊສົມບູນ", 1, 0));
 
-        data.put("newCases", 19);
+
+        //Generate news
+        List<News> newsList = new ArrayList<>();
+        newsList.add(new News("ບ້ານເຂດແດງນະຄອນຫລວງ ວັນທີ 24 ເດືອນ 05", "https://www.facebook.com/CIEH.MoH.Lao/photos/a.1594657613892260/4279067512117910/"));
+        newsList.add(new News("ຈຸດສັກວັກຊີນເຂັມ2ຢູ່ນະຄອນຫຼວງວຽງຈັນ", "https://www.facebook.com/CIEH.MoH.Lao/photos/a.1580136645344357/4275377012486960/"));
+
+        data.put("newsList", newsList);
+        data.put("totalInfected", 1822);
+        data.put("newCases", 21);
         data.put("provinces", provinceList);
-        data.put("active", 725);
+        data.put("active", 687);
         data.put("death", 2);
-        data.put("recovered", 1074);
+        data.put("recovered", 1133);
         data.put("test", 233618);
-        data.put("appVersion", 0.1 );
-        data.put("updateURL", "https://apps.apple.com/gb/app/nhs-covid-19/id1520427663");
-        data.put("infoDate", "24/05/2021");
+        data.put("appVersion", 0.1);
+        data.put("updateURL", "https://play.google.com/store/apps/details?id=info.laoscovid19.laocovid19&hl=en&gl=US");
+        data.put("infoDate", "25/05/2021");
         return ResponseEntity.ok(data);
     }
 }
