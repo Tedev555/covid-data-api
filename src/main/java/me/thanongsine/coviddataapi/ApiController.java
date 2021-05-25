@@ -43,7 +43,7 @@ public class ApiController {
 
         //Generate news
         List<News> newsList = new ArrayList<>();
-        newsList.add(new News("ບ້ານເຂດແດງນະຄອນຫລວງ ວັນທີ 24 ເດືອນ 05", "https://www.facebook.com/CIEH.MoH.Lao/photos/a.1594657613892260/4279067512117910/"));
+        newsList.add(new News("ບ້ານເຂດແດງນະຄອນຫລວງ ວັນທີ 24 ເດືອນ 05", "https://www.facebook.com/CIEH.MoH.Lao/photos/a.1594657613892260/4279292672095394/"));
         newsList.add(new News("ຈຸດສັກວັກຊີນເຂັມ2ຢູ່ນະຄອນຫຼວງວຽງຈັນ", "https://www.facebook.com/CIEH.MoH.Lao/photos/a.1580136645344357/4275377012486960/"));
 
         data.put("newsList", newsList);
