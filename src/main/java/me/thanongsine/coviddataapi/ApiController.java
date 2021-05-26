@@ -21,42 +21,42 @@ public class ApiController {
     public ResponseEntity<?> getCovidCases() {
         Map<String, Object> data = new HashMap<>();
         List<Province> provinceList = new ArrayList<>();
-        provinceList.add(new Province("ຜົ້ງສາລີ", 8, 3));
+        provinceList.add(new Province("ຜົ້ງສາລີ", 8, 0));
         provinceList.add(new Province("ຫຼວງນໍ້າທາ", 8, 0));
         provinceList.add(new Province("ຫົວພັນ", 0, 0));
-        provinceList.add(new Province("ບໍ່ແກ້ວ", 492, 17));
-        provinceList.add(new Province("ອຸດົມໄຊ", 22, 7));
+        provinceList.add(new Province("ບໍ່ແກ້ວ", 492, 0));
+        provinceList.add(new Province("ອຸດົມໄຊ", 22, 0));
         provinceList.add(new Province("ໄຊຍະບູລີ", 3, 0));
         provinceList.add(new Province("ຊຽງຂວາງ", 1, 0));
         provinceList.add(new Province("ຫຼວງພະບາງ", 16, 0));
         provinceList.add(new Province("ວຽງຈັນ", 18, 0));
-        provinceList.add(new Province("ນຫລ ວຽງຈັນ", 875, 16));
+        provinceList.add(new Province("ນຫລ ວຽງຈັນ", 878, 3));
         provinceList.add(new Province("ບໍລິຄຳໄຊ", 3, 0));
-        provinceList.add(new Province("ຄຳມ່ວນ", 6, 5));
-        provinceList.add(new Province("ສະຫວັນນະເຂດ", 97, 10));
+        provinceList.add(new Province("ຄຳມ່ວນ", 6, 0));
+        provinceList.add(new Province("ສະຫວັນນະເຂດ", 99, 2));
         provinceList.add(new Province("ສາລະວັນ", 13, 0));
         provinceList.add(new Province("ເຊກອງ", 1, 0));
         provinceList.add(new Province("ອັດຕະປື", 0, 0));
-        provinceList.add(new Province("ຈຳປາສັກ", 314, 3));
+        provinceList.add(new Province("ຈຳປາສັກ", 314, 0));
         provinceList.add(new Province("ໄຊສົມບູນ", 1, 0));
 
 
         //Generate news
         List<News> newsList = new ArrayList<>();
-        newsList.add(new News("ບ້ານເຂດແດງນະຄອນຫລວງ ວັນທີ 24 ເດືອນ 05", "https://www.facebook.com/CIEH.MoH.Lao/photos/a.1594657613892260/4279292672095394/"));
+        newsList.add(new News("ບ້ານເຂດແດງນະຄອນຫລວງ ວັນທີ 25 ເດືອນ 05", "https://www.facebook.com/CIEH.MoH.Lao/photos/a.1594657613892260/4282103618480966/"));
         newsList.add(new News("ຈຸດສັກວັກຊີນເຂັມ2ຢູ່ນະຄອນຫຼວງວຽງຈັນ", "https://www.facebook.com/CIEH.MoH.Lao/photos/a.1580136645344357/4275377012486960/"));
 
         data.put("newsList", newsList);
-        data.put("totalInfected", 1878);
-        data.put("newCases", 56);
+        data.put("totalInfected", 1883);
+        data.put("newCases", 5);
         data.put("provinces", provinceList);
-        data.put("active", 696);
+        data.put("active", 620);
         data.put("death", 2);
-        data.put("recovered", 1180);
-        data.put("test", 236228);
+        data.put("recovered", 1261);
+        data.put("test", 237995);
         data.put("appVersion", 0.1);
         data.put("updateURL", "https://play.google.com/store/apps/details?id=info.laoscovid19.laocovid19&hl=en&gl=US");
-        data.put("infoDate", "25/05/2021");
+        data.put("infoDate", "26/05/2021");
         return ResponseEntity.ok(data);
     }
 }
