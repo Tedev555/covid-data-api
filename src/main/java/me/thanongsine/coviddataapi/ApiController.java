@@ -30,14 +30,14 @@ public class ApiController {
         provinceList.add(new Province("ຊຽງຂວາງ", 1, 0));
         provinceList.add(new Province("ຫຼວງພະບາງ", 16, 0));
         provinceList.add(new Province("ວຽງຈັນ", 18, 0));
-        provinceList.add(new Province("ນຫລ ວຽງຈັນ", 878, 3));
+        provinceList.add(new Province("ນຫລ ວຽງຈັນ", 882, 4));
         provinceList.add(new Province("ບໍລິຄຳໄຊ", 3, 0));
         provinceList.add(new Province("ຄຳມ່ວນ", 6, 0));
-        provinceList.add(new Province("ສະຫວັນນະເຂດ", 99, 2));
+        provinceList.add(new Province("ສະຫວັນນະເຂດ", 92, 3));
         provinceList.add(new Province("ສາລະວັນ", 13, 0));
         provinceList.add(new Province("ເຊກອງ", 1, 0));
         provinceList.add(new Province("ອັດຕະປື", 0, 0));
-        provinceList.add(new Province("ຈຳປາສັກ", 314, 0));
+        provinceList.add(new Province("ຈຳປາສັກ", 319, 5));
         provinceList.add(new Province("ໄຊສົມບູນ", 1, 0));
 
 
@@ -47,12 +47,12 @@ public class ApiController {
         newsList.add(new News("ຈຸດສັກວັກຊີນເຂັມ2ຢູ່ນະຄອນຫຼວງວຽງຈັນ", "https://www.facebook.com/CIEH.MoH.Lao/photos/a.1580136645344357/4275377012486960/"));
 
         data.put("newsList", newsList);
-        data.put("totalInfected", 1883);
-        data.put("newCases", 5);
+        data.put("totalInfected", 1895);
+        data.put("newCases", 12);
         data.put("provinces", provinceList);
-        data.put("active", 620);
+        data.put("active", 612);
         data.put("death", 2);
-        data.put("recovered", 1261);
+        data.put("recovered", 1281);
         data.put("test", 237995);
         data.put("appVersion", 0.1);
         data.put("updateURL", "https://play.google.com/store/apps/details?id=info.laoscovid19.laocovid19&hl=en&gl=US");
