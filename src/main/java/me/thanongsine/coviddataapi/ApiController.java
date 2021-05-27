@@ -53,10 +53,10 @@ public class ApiController {
         data.put("active", 612);
         data.put("death", 2);
         data.put("recovered", 1281);
-        data.put("test", 237995);
+        data.put("test", 239985);
         data.put("appVersion", 0.1);
         data.put("updateURL", "https://play.google.com/store/apps/details?id=info.laoscovid19.laocovid19&hl=en&gl=US");
-        data.put("infoDate", "26/05/2021");
+        data.put("infoDate", "27/05/2021");
         return ResponseEntity.ok(data);
     }
 }
